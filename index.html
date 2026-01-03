@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WallApp - Papéis de Parede</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho e Espaço para Anúncio -->
+    <header>
+        <h1>WallApp</h1>
+        <div class="ad-placeholder">
+            <span>Anúncio (Google AdSense)</span>
+        </div>
+    </header>
+
+    <!-- Filtros de Categorias -->
+    <nav class="categories">
+        <button class="active" onclick="filterImages('todos')">Todos</button>
+        <button onclick="filterImages('natureza')">Natureza</button>
+        <button onclick="filterImages('gamer')">Gamer</button>
+        <button onclick="filterImages('fe')">Fé</button>
+        <button onclick="filterImages('motivacao')">Motivação</button>
+    </nav>
+
+    <!-- Galeria de Imagens -->
+    <main id="gallery" class="gallery-grid">
+        <!-- As imagens serão inseridas pelo JavaScript -->
+    </main>
+
+    <!-- Modal para Tela Cheia -->
+    <div id="modal" class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <img id="modal-img" src="" alt="Wallpaper Preview">
+        <div class="modal-actions">
+            <button id="download-btn">Salvar Imagem</button>
+            <button id="share-btn">Compartilhar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+                              </html>
